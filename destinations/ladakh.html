@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladakh / Kashmir Tour Packages | Tour & Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/destination.css">
+</head>
+<body class="tail-container">
+
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6">
+            <div class="flex items-center justify-between py-3 sm:py-4">
+                <a href="../index.html" class="logo-font text-xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-cyan-400 whitespace-nowrap">Tour &amp; Travel</a>
+                <div class="hidden xl:flex items-center gap-x-7 text-[15px] font-medium whitespace-nowrap">
+                    <a href="../national-tours.html" class="nav-link">National Tours</a>
+                    <a href="../international-tours.html" class="nav-link">International Tours</a>
+                    <a href="../packages.html" class="nav-link">Tour Packages</a>
+                    <a href="../services.html" class="nav-link">Our Services</a>
+                    <a href="../about.html" class="nav-link">About Us</a>
+                    <a href="../contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="hidden xl:flex items-center gap-x-4">
+                    <button onclick="openConsultModal()" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center">Consult Now <i class="fas fa-arrow-right ml-2"></i></button>
+                </div>
+                <button onclick="toggleMobileMenu()" class="xl:hidden text-2xl text-cyan-600 hamburger focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden xl:hidden mobile-menu rounded-b-xl shadow-lg">
+                <div class="mob-item"><a href="../national-tours.html" class="mob-parent">National Tours</a></div>
+                <div class="mob-item"><a href="../international-tours.html" class="mob-parent">International Tours</a></div>
+                <div class="mob-item"><a href="../packages.html" class="mob-parent">Tour Packages</a></div>
+                <div class="mob-item"><a href="../services.html" class="mob-parent">Our Services</a></div>
+                <div class="mob-item"><a href="../about.html" class="mob-parent">About Us</a></div>
+                <div class="mob-item"><a href="../contact.html" class="mob-parent">Contact</a></div>
+                <div class="mt-4 px-2">
+                    <button onclick="openConsultModal(); toggleMobileMenu();" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center w-full text-center">Consult Now <i class="fas fa-arrow-right ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dest-page-hero" style="background-image: url('../assets/images/ladakh.jpg');">
+        <div class="dest-page-overlay"></div>
+        <div class="dest-page-hero-content">
+            <span class="inline-block py-1 pr-[14px] pl-[14px] rounded-full bg-cyan-500/20 text-cyan-300 backdrop-blur-sm border border-cyan-500/30 text-[13px] font-medium mb-6 uppercase tracking-[0.08em]">Leh Ladakh</span>
+            <h1 class="logo-font text-5xl md:text-7xl font-bold text-white mt-4 mb-4">Kashmir / Ladakh</h1>
+            <p class="text-xl text-gray-200 max-w-2xl">The land of high passes — Pangong Lake, Nubra Valley &amp; the world's most dramatic landscapes</p>
+            <div class="dest-page-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Leh, Ladakh, India</span>
+                <span><i class="fas fa-thermometer-half"></i> Best Time: May - Sep</span>
+                <span><i class="fas fa-mountain"></i> Altitude: 3,500m+</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="dest-about-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+            <h2 class="logo-font text-3xl font-bold text-slate-900 mb-4">About <span class="text-cyan-500">Ladakh</span></h2>
+            <p class="text-slate-500 text-lg leading-relaxed max-w-4xl">
+                Ladakh is a land of stark, breathtaking beauty — where turquoise lakes shimmer against barren mountains, ancient monasteries cling to cliffsides, and the sky feels impossibly close. From the iconic Pangong Tso Lake and the sand dunes of Nubra Valley to the magnetic Khardung La Pass and the spiritual Leh city, every corner of Ladakh is a photographer's dream and an adventurer's paradise. With its unique Tibetan-Buddhist culture and some of the world's most dramatic high-altitude landscapes, Ladakh is truly unlike anywhere else on earth.
+            </p>
+        </div>
+    </section>
+<script src="../js/scroll-top.js"></script>
+    <script src="../js/dest-common.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-[60px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[28px] sm:gap-10 max-w-7xl mx-auto px-6">
+            <!-- Brand -->
+            <div class="flex flex-col [&>p]:text-[14px] [&>p]:leading-[1.7] [&>p]:mt-3 [&>p]:text-slate-500 [&>p]:max-w-[280px]">
+                <span class="logo-font text-2xl font-bold" style="background: linear-gradient(to right,#0891b2,#22d3ee); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Tour & Travel</span>
+                <p>Your trusted travel partner for customized journeys across India and the world. From planning to execution, we handle everything professionally.</p>
+                <div class="flex gap-2.5 mt-4 [&>a]:w-9 [&>a]:h-9 [&>a]:rounded-full [&>a]:bg-white/5 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-slate-400 [&>a]:text-[14px] [&>a]:no-underline [&>a]:transition-all [&>a]:duration-200 hover:[&>a]:bg-cyan-500 hover:[&>a]:text-white">
+                    <a href="https://wa.me/919971904999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../national-tours.html">National Tours</a></li>
+                    <li><a href="../international-tours.html">International Tours</a></li>
+                    <li><a href="../packages.html">Tour Packages</a></li>
+                    <li><a href="../services.html">Our Services</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Destinations -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Destinations</h4>
+                <ul>
+                    <li><a href="../destinations/goa.html">Goa</a></li>
+                    <li><a href="../destinations/manali.html">Manali</a></li>
+                    <li><a href="../destinations/ladakh.html">Kashmir / Ladakh</a></li>
+                    <li><a href="../international/dubai.html">Dubai</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Contact Us</h4>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-phone-alt"></i><a href="tel:+919971904999">+91 9971904999</a></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-envelope"></i><a href="mailto:info@tourandtravel.com">info@tourandtravel.com</a></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon�Sat: 9AM � 7PM</span></div>
+            </div>
+        </div>
+        <div class="mt-12 border-t border-white/5 py-5 px-6 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between flex-wrap gap-2 text-center sm:text-left [&>p]:text-[13px] [&>p]:text-slate-600">
+            <p>&copy; 2025 Tour & Travel. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color:#06b6d4;"></i> for travelers</p>
+        </div>
+    </footer>
+</body>
+</html>

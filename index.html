@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel | Premium Destinations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyan: {
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                        }
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                        playfair: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="tail-container">
+
+    <div class="top-bar py-2 text-xs">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-2">
+            <div class="hidden md:flex items-center gap-x-6 font-medium">
+                <div class="flex items-center gap-x-2">
+                    <i class="far fa-clock top-bar-icon"></i>
+                    <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-3 md:gap-x-6 flex-wrap justify-center">
+                <a href="mailto:info@tourandtravel.com" class="hidden sm:flex items-center gap-x-2 transition-colors">
+                    <i class="fas fa-envelope top-bar-icon"></i>
+                    <span>info@tourandtravel.com</span>
+                </a>
+                <a href="tel:+919876543210" class="flex items-center gap-x-2 transition-colors">
+                    <i class="fas fa-phone-alt top-bar-icon"></i>
+                    <span>+91 9971904999</span>
+                </a>
+                <div class="flex items-center gap-x-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6">
+            <div class="flex items-center justify-between py-3 sm:py-4">
+                <a href="index.html" class="flex items-center gap-x-3 logo min-w-0">
+                    <div class="logo-font min-w-0">
+                        <span class="text-xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-cyan-400 whitespace-nowrap">Tour & Travel</span>
+                    </div>
+                </a>
+
+                <div class="hidden xl:flex items-center gap-x-7 text-[15px] font-medium nav-menu whitespace-nowrap">
+                    <a href="national-tours.html" class="nav-link">National Tours</a>
+                    <a href="international-tours.html" class="nav-link">International Tours</a>
+                    <a href="packages.html" class="nav-link">Tour Packages</a>
+                    <a href="services.html" class="nav-link">Our Services</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="hidden xl:flex items-center gap-x-4">
+                    <button onclick="openConsultModal()" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center">
+                        Consult Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="xl:hidden text-2xl text-cyan-600 hamburger focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden xl:hidden mobile-menu rounded-b-xl shadow-lg">
+                <div class="mob-item"><a href="national-tours.html" class="mob-parent">National Tours</a></div>
+                <div class="mob-item"><a href="international-tours.html" class="mob-parent">International Tours</a></div>
+                <div class="mob-item"><a href="packages.html" class="mob-parent">Tour Packages</a></div>
+                <div class="mob-item"><a href="services.html" class="mob-parent">Our Services</a></div>
+                <div class="mob-item"><a href="about.html" class="mob-parent">About Us</a></div>
+                <div class="mob-item"><a href="contact.html" class="mob-parent">Contact</a></div>
+                <div class="mt-4 px-2">
+                    <button onclick="openConsultModal(); toggleMobileMenu();" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center w-full text-center">
+                        Consult Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-carousel">
+        <div class="carousel-slide active" style="background-image: url('assets/images/hero-new.jpg');">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+                <span class="inline-block py-1 pr-[14px] pl-[14px] rounded-full bg-cyan-500/20 text-cyan-300 backdrop-blur-sm border border-cyan-500/30 text-[13px] font-medium mb-6 uppercase tracking-[0.08em]">Welcome to Tour & Travel</span>
+                <h1 class="logo-font text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-[1.1]">
+                    Explore the World with<br/><span class="text-cyan-400">Comfort & Trust</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                    Your journey begins with us — discover amazing destinations, customized packages, and unforgettable experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#destinations" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-8 py-4 text-base w-full sm:w-auto">View Packages</a>
+                    <a href="contact.html" class="bg-white/10 backdrop-blur-md border border-white/40 text-white hover:text-slate-900 hover:bg-white font-semibold py-3 px-7 rounded-full text-[15px] transition-all duration-300 hover:-translate-y-[2px] hover:border-white inline-block text-center cursor-pointer px-8 py-4 text-base w-full sm:w-auto">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('assets/images/ladakh.jpg');">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+                <span class="inline-block py-1 pr-[14px] pl-[14px] rounded-full bg-cyan-500/20 text-cyan-300 backdrop-blur-sm border border-cyan-500/30 text-[13px] font-medium mb-6 uppercase tracking-[0.08em]">Himalayan Adventure</span>
+                <h1 class="logo-font text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-[1.1]">
+                    Explore the World with<br/><span class="text-cyan-400">Comfort & Trust</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                    Your journey begins with us — discover amazing destinations, customized packages, and unforgettable experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="destinations/ladakh.html" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-8 py-4 text-base w-full sm:w-auto">View Packages <i class="fas fa-arrow-right ml-1"></i></a>
+                    <a href="contact.html" class="bg-white/10 backdrop-blur-md border border-white/40 text-white hover:text-slate-900 hover:bg-white font-semibold py-3 px-7 rounded-full text-[15px] transition-all duration-300 hover:-translate-y-[2px] hover:border-white inline-block text-center cursor-pointer px-8 py-4 text-base w-full sm:w-auto">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('assets/images/banglore.jpg');">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+                <span class="inline-block py-1 pr-[14px] pl-[14px] rounded-full bg-cyan-500/20 text-cyan-300 backdrop-blur-sm border border-cyan-500/30 text-[13px] font-medium mb-6 uppercase tracking-[0.08em]">Garden City of India</span>
+                <h1 class="logo-font text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-[1.1]">
+                    Explore the World with<br/><span class="text-cyan-400">Comfort & Trust</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                    Your journey begins with us — discover amazing destinations, customized packages, and unforgettable experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="packages.html" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-8 py-4 text-base w-full sm:w-auto">View Packages <i class="fas fa-arrow-right ml-1"></i></a>
+                    <a href="contact.html" class="bg-white/10 backdrop-blur-md border border-white/40 text-white hover:text-slate-900 hover:bg-white font-semibold py-3 px-7 rounded-full text-[15px] transition-all duration-300 hover:-translate-y-[2px] hover:border-white inline-block text-center cursor-pointer px-8 py-4 text-base w-full sm:w-auto">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('assets/images/jaipur.jpg');">
+            <div class="carousel-overlay"></div>
+            <div class="carousel-content">
+                <span class="inline-block py-1 pr-[14px] pl-[14px] rounded-full bg-cyan-500/20 text-cyan-300 backdrop-blur-sm border border-cyan-500/30 text-[13px] font-medium mb-6 uppercase tracking-[0.08em]">Royal Heritage</span>
+                <h1 class="logo-font text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl leading-[1.1]">
+                    Explore the World with<br/><span class="text-cyan-400">Comfort & Trust</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                    Your journey begins with us — discover amazing destinations, customized packages, and unforgettable experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="packages.html" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-8 py-4 text-base w-full sm:w-auto">View Packages <i class="fas fa-arrow-right ml-1"></i></a>
+                    <a href="contact.html" class="bg-white/10 backdrop-blur-md border border-white/40 text-white hover:text-slate-900 hover:bg-white font-semibold py-3 px-7 rounded-full text-[15px] transition-all duration-300 hover:-translate-y-[2px] hover:border-white inline-block text-center cursor-pointer px-8 py-4 text-base w-full sm:w-auto">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <!-- Why Choose Us -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-cyan-500/10 text-cyan-600 text-[13px] font-semibold py-1.5 px-4 rounded-full tracking-[0.06em] uppercase border border-cyan-500/20">Why Choose Us</span>
+                <h2 class="logo-font text-4xl md:text-5xl font-bold text-slate-900 mt-4 leading-tight">
+                    Why Travel with <span class="text-cyan-500">Us?</span>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="why-card text-center">
+                    <div class="why-icon mx-auto"><i class="fas fa-tag"></i></div>
+                    <h3>Affordable & Customized</h3>
+                    <p>Tour packages designed around your budget and preferences — no hidden costs.</p>
+                </div>
+                <div class="why-card text-center">
+                    <div class="why-icon mx-auto"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our team is available round the clock to assist you before, during, and after your trip.</p>
+                </div>
+                <div class="why-card text-center">
+                    <div class="why-icon mx-auto"><i class="fas fa-users"></i></div>
+                    <h3>Trusted by 1000+ Travelers</h3>
+                    <p>Over a thousand happy travelers have explored the world with our expert guidance.</p>
+                </div>
+                <div class="why-card text-center">
+                    <div class="why-icon mx-auto"><i class="fas fa-check-circle"></i></div>
+                    <h3>Hassle-free Booking</h3>
+                    <p>Simple, transparent booking process — from inquiry to confirmation in minutes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Destinations -->
+        <div style="background: linear-gradient(135deg,#f0fdff,#e0f7fa); padding: 70px 0;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <h2 class="logo-font text-4xl md:text-5xl font-bold text-slate-900">Popular <span class="text-cyan-500">Destinations</span></h2>
+                    <p class="text-slate-500 mt-4 text-lg">Handpicked destinations for your next unforgettable journey</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="destinations/goa.html" class="group relative rounded-2xl overflow-hidden h-[200px] sm:h-[280px] block no-underline shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_12px_30px_rgba(6,182,212,0.2)] [&>img]:w-full [&>img]:h-full [&>img]:object-cover [&>img]:transition-transform [&>img]:duration-500 group-hover:[&>img]:scale-[1.08]">
+                        <img src="assets/images/goa.jpg" alt="Goa" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent text-white text-[15px] font-bold pt-7 px-4 pb-4 text-center z-10">Goa Tour Packages</div>
+                    </a>
+                    <a href="destinations/manali.html" class="group relative rounded-2xl overflow-hidden h-[200px] sm:h-[280px] block no-underline shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_12px_30px_rgba(6,182,212,0.2)] [&>img]:w-full [&>img]:h-full [&>img]:object-cover [&>img]:transition-transform [&>img]:duration-500 group-hover:[&>img]:scale-[1.08]">
+                        <img src="assets/images/manali.jpg" alt="Manali" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent text-white text-[15px] font-bold pt-7 px-4 pb-4 text-center z-10">Manali Trips</div>
+                    </a>
+                    <a href="international/dubai.html" class="group relative rounded-2xl overflow-hidden h-[200px] sm:h-[280px] block no-underline shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_12px_30px_rgba(6,182,212,0.2)] [&>img]:w-full [&>img]:h-full [&>img]:object-cover [&>img]:transition-transform [&>img]:duration-500 group-hover:[&>img]:scale-[1.08]">
+                        <img src="assets/images/dubai.jpg" alt="Dubai" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent text-white text-[15px] font-bold pt-7 px-4 pb-4 text-center z-10">Dubai Holiday Packages</div>
+                    </a>
+                    <a href="destinations/ladakh.html" class="group relative rounded-2xl overflow-hidden h-[200px] sm:h-[280px] block no-underline shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_12px_30px_rgba(6,182,212,0.2)] [&>img]:w-full [&>img]:h-full [&>img]:object-cover [&>img]:transition-transform [&>img]:duration-500 group-hover:[&>img]:scale-[1.08]">
+                        <img src="assets/images/ladakh.jpg" alt="Kashmir" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent text-white text-[15px] font-bold pt-7 px-4 pb-4 text-center z-10">Kashmir Packages</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Services -->
+        <div style="background:#fff; padding: 70px 0;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <span class="inline-block bg-cyan-500/10 text-cyan-600 text-[13px] font-semibold py-1.5 px-4 rounded-full tracking-[0.06em] uppercase border border-cyan-500/20">What We Offer</span>
+                    <h2 class="logo-font text-4xl md:text-5xl font-bold text-slate-900 mt-4">Our <span class="text-cyan-500">Services</span></h2>
+                    <p class="text-slate-500 mt-4 max-w-2xl mx-auto">We provide end-to-end travel solutions so you do not have to worry about anything. From planning to execution, everything is handled professionally.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-plane-departure"></i></div>
+                        <h3>Flight Booking</h3>
+                        <p>Domestic and international flight bookings at the best available fares — saving you time and money.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-hotel"></i></div>
+                        <h3>Hotel Reservations</h3>
+                        <p>From budget stays to luxury resorts, we book the right accommodation that fits your comfort and budget.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-car"></i></div>
+                        <h3>Cab & Transport Services</h3>
+                        <p>Comfortable and reliable cab, bus, and private vehicle arrangements for all your travel needs.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-passport"></i></div>
+                        <h3>Visa Assistance</h3>
+                        <p>Complete visa documentation support for international travel — we guide you through every step.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Honeymoon Packages</h3>
+                        <p>Romantic getaways crafted with love — special stays, candlelight dinners and couple spa experiences.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Corporate Travel Solutions</h3>
+                        <p>End-to-end corporate travel management — flights, hotels, transfers and team retreats handled professionally.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="services.html" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-8 py-4 text-base" style="display:inline-block; text-decoration:none;">
+                        View All Services <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="background:#0f172a; padding: 80px 0; text-align:center;">
+            <div class="max-w-2xl mx-auto px-4 sm:px-6">
+                <h2 class="logo-font text-4xl font-bold text-white mb-4">Ready to Plan Your <span class="text-cyan-400">Next Trip?</span></h2>
+                <p class="text-slate-400 text-lg mb-10">Get in touch with us today and let's make your dream vacation a reality.</p>
+                <button onclick="openConsultModal()" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-7 rounded-full text-[15px] shadow-[0_4px_14px_0_rgba(6,182,212,0.39)] hover:shadow-[0_6px_20px_rgba(6,182,212,0.5)] transition-all duration-300 hover:-translate-y-[2px] border-none cursor-pointer inline-block text-center px-10 py-4 text-base">
+                    Get In Touch <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="pkg-modal" class="pkg-modal-backdrop hidden" onclick="if(event.target===this) closePackages()">
+        <div class="pkg-modal-box">
+            <button class="pkg-close" onclick="closePackages()"><i class="fas fa-times"></i></button>
+            <div id="pkg-modal-content"></div>
+        </div>
+    </div>
+
+    <script src="js/scroll-top.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-[60px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[28px] sm:gap-10 max-w-7xl mx-auto px-6">
+            <!-- Brand -->
+            <div class="flex flex-col [&>p]:text-[14px] [&>p]:leading-[1.7] [&>p]:mt-3 [&>p]:text-slate-500 [&>p]:max-w-[280px]">
+                <span class="logo-font text-2xl font-bold" style="background: linear-gradient(to right,#0891b2,#22d3ee); background-clip:text; -webkit-text-fill-color:transparent;">Tour & Travel</span>
+                <p>Your trusted travel partner for customized journeys across India and the world. From planning to execution, we handle everything professionally.</p>
+                <div class="flex gap-2.5 mt-4 [&>a]:w-9 [&>a]:h-9 [&>a]:rounded-full [&>a]:bg-white/5 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-slate-400 [&>a]:text-[14px] [&>a]:no-underline [&>a]:transition-all [&>a]:duration-200 hover:[&>a]:bg-cyan-500 hover:[&>a]:text-white">
+                    <a href="https://wa.me/919971904999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="national-tours.html">National Tours</a></li>
+                    <li><a href="international-tours.html">International Tours</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Destinations -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Destinations</h4>
+                <ul>
+                    <li><a href="destinations/goa.html">Goa</a></li>
+                    <li><a href="destinations/manali.html">Manali</a></li>
+                    <li><a href="destinations/ladakh.html">Kashmir / Ladakh</a></li>
+                    <li><a href="international/dubai.html">Dubai</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="flex flex-col [&>h4]:text-[14px] [&>h4]:font-bold [&>h4]:text-slate-200 [&>h4]:uppercase [&>h4]:tracking-[0.06em] [&>h4]:mb-4 [&>ul]:list-none [&>ul]:p-0 [&>ul]:m-0 [&>ul]:flex [&>ul]:flex-col [&>ul]:gap-2.5 [&_li_a]:text-[14px] [&_li_a]:text-slate-500 [&_li_a]:no-underline [&_li_a]:transition-colors [&_li_a]:duration-200 hover:[&_li_a]:text-cyan-300">
+                <h4>Contact Us</h4>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-phone-alt"></i><a href="tel:+919971904999">+91 9971904999</a></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-envelope"></i><a href="mailto:info@tourandtravel.com">info@tourandtravel.com</a></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon-Sat: 9AM-7PM</span></div>
+            </div>
+        </div>
+        <div class="mt-12 border-t border-white/5 py-5 px-6 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between flex-wrap gap-2 text-center sm:text-left [&>p]:text-[13px] [&>p]:text-slate-600">
+            <p>&copy; 2025 Tour & Travel. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color:#06b6d4;"></i> for travelers</p>
+        </div>
+    </footer>
+</body>
+
+</html>
