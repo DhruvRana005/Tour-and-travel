@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,6 +64,111 @@
             <p class="text-slate-500 text-lg leading-relaxed max-w-4xl">
                 Ladakh is a land of stark, breathtaking beauty — where turquoise lakes shimmer against barren mountains, ancient monasteries cling to cliffsides, and the sky feels impossibly close. From the iconic Pangong Tso Lake and the sand dunes of Nubra Valley to the magnetic Khardung La Pass and the spiritual Leh city, every corner of Ladakh is a photographer's dream and an adventurer's paradise. With its unique Tibetan-Buddhist culture and some of the world's most dramatic high-altitude landscapes, Ladakh is truly unlike anywhere else on earth.
             </p>
+
+            <!-- Active Package Details -->
+            <div class="mt-12 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border border-slate-100 p-6 sm:p-8">
+                <h3 class="logo-font text-2xl font-bold text-slate-900 mb-6">Kashmir Tour Package Details</h3>
+                <div class="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
+                    <div>
+                        <div class="flex items-center gap-4 text-cyan-600 font-semibold mb-5 text-lg">
+                            <span><i class="fas fa-moon"></i> 6 Nights</span>
+                            <span><i class="fas fa-sun"></i> 7 Days</span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-slate-600 font-medium max-w-2xl">
+                            <div class="flex items-center"><i class="fas fa-check-circle text-cyan-500 mr-2"></i> Houseboat Stay</div>
+                            <div class="flex items-center"><i class="fas fa-check-circle text-cyan-500 mr-2"></i> Sightseeing Included</div>
+                            <div class="flex items-center"><i class="fas fa-check-circle text-cyan-500 mr-2"></i> Shikara Ride</div>
+                            <div class="flex items-center"><i class="fas fa-check-circle text-cyan-500 mr-2"></i> All Transfers</div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 min-w-[200px] text-center w-full md:w-auto mt-4 md:mt-0">
+                        <div class="text-sm text-slate-500 font-semibold uppercase tracking-wide mb-1">Starting From</div>
+                        <div class="text-3xl font-bold text-cyan-600 mb-4">₹18,999 <span class="text-sm text-slate-500 font-medium">/ person</span></div>
+                        <button onclick="openConsultModal()" class="w-full px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-full transition-colors duration-300 shadow-[0_4px_14px_0_rgba(6,182,212,0.39)]">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Popular Destinations -->
+            <div class="mt-20">
+                <div class="mb-10 text-center sm:text-left">
+                    <h2 class="logo-font text-3xl font-bold text-slate-900">Explore Other <span class="text-cyan-500">Destinations</span></h2>
+                </div>
+                <div class="dest-pkg-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="dest-pkg-card">
+                        <img src="../assets/images/goa.jpg" alt="Goa Package" />
+                        <div class="dest-pkg-card-body">
+                            <span class="inline-block bg-cyan-500/85 text-white text-[11px] font-semibold py-[3px] px-2.5 rounded-full uppercase tracking-[0.05em] mb-2 w-max" style="opacity:1;transform:none;position:static;display:inline-block;margin-bottom:10px;">National</span>
+                            <h3>Goa Package</h3>
+                            <p class="dest-pkg-desc">Sun, sand & seafood — the ultimate Goa beach holiday with sightseeing.</p>
+                            <div class="dest-pkg-highlights">
+                                <span><i class="fas fa-moon"></i> 3 Nights</span>
+                                <span><i class="fas fa-sun"></i> 4 Days</span>
+                            </div>
+                            <ul class="dest-pkg-includes">
+                                <li><i class="fas fa-check"></i> Hotel with Breakfast</li>
+                                <li><i class="fas fa-check"></i> Airport Transfers</li>
+                            </ul>
+                            <div class="dest-pkg-footer">
+                                <div class="dest-pkg-price">₹9,999 <span>/ person</span></div>
+                            </div>
+                            <div style="display:flex;gap:10px;margin-top:14px;">
+                                <a href="../destinations/goa.html" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300 text-center no-underline cursor-pointer">View Details</a>
+                                <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dest-pkg-card">
+                        <img src="../assets/images/manali.jpg" alt="Manali Package" />
+                        <div class="dest-pkg-card-body">
+                            <span class="inline-block bg-cyan-500/85 text-white text-[11px] font-semibold py-[3px] px-2.5 rounded-full uppercase tracking-[0.05em] mb-2 w-max" style="opacity:1;transform:none;position:static;display:inline-block;margin-bottom:10px;">National</span>
+                            <h3>Manali Package</h3>
+                            <p class="dest-pkg-desc">Snow valleys, Rohtang Pass & river rafting — the perfect Himalayan escape.</p>
+                            <div class="dest-pkg-highlights">
+                                <span><i class="fas fa-moon"></i> 5 Nights</span>
+                                <span><i class="fas fa-sun"></i> 6 Days</span>
+                            </div>
+                            <ul class="dest-pkg-includes">
+                                <li><i class="fas fa-check"></i> Hotel with Meals</li>
+                                <li><i class="fas fa-check"></i> All Transfers</li>
+                            </ul>
+                            <div class="dest-pkg-footer">
+                                <div class="dest-pkg-price">₹12,999 <span>/ person</span></div>
+                            </div>
+                            <div style="display:flex;gap:10px;margin-top:14px;">
+                                <a href="../destinations/manali.html" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300 text-center no-underline cursor-pointer">View Details</a>
+                                <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dest-pkg-card">
+                        <img src="../assets/images/dubai.jpg" alt="Dubai Package" />
+                        <div class="dest-pkg-card-body">
+                            <span class="inline-block bg-cyan-500/85 text-white text-[11px] font-semibold py-[3px] px-2.5 rounded-full uppercase tracking-[0.05em] mb-2 w-max" style="opacity:1;transform:none;position:static;display:inline-block;margin-bottom:10px;background:rgba(14,116,144,0.85);">International</span>
+                            <h3>Dubai Package</h3>
+                            <p class="dest-pkg-desc">Burj Khalifa, desert safari & luxury shopping — the ultimate experience.</p>
+                            <div class="dest-pkg-highlights">
+                                <span><i class="fas fa-moon"></i> 4 Nights</span>
+                                <span><i class="fas fa-sun"></i> 5 Days</span>
+                            </div>
+                            <ul class="dest-pkg-includes">
+                                <li><i class="fas fa-check"></i> Visa & Flights</li>
+                                <li><i class="fas fa-check"></i> Desert Safari</li>
+                            </ul>
+                            <div class="dest-pkg-footer">
+                                <div class="dest-pkg-price">₹49,999 <span>/ person</span></div>
+                            </div>
+                            <div style="display:flex;gap:10px;margin-top:14px;">
+                                <a href="../international/dubai.html" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300 text-center no-underline cursor-pointer">View Details</a>
+                                <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 <script src="../js/scroll-top.js"></script>
@@ -108,7 +213,7 @@
                 <h4>Contact Us</h4>
                 <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-phone-alt"></i><a href="tel:+919971904999">+91 9971904999</a></div>
                 <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-envelope"></i><a href="mailto:info@tourandtravel.com">info@tourandtravel.com</a></div>
-                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon�Sat: 9AM � 7PM</span></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon-Sat: 9AM-7PM</span></div>
             </div>
         </div>
         <div class="mt-12 border-t border-white/5 py-5 px-6 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between flex-wrap gap-2 text-center sm:text-left [&>p]:text-[13px] [&>p]:text-slate-600">
