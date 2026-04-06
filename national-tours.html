@@ -81,7 +81,7 @@
                         <div class="dest-pkg-footer">
                             <div class="dest-pkg-price">₹9,999 <span>/ person</span></div>
                         </div>
-                        <div style="display:flex;gap:10px;margin-top:14px;">
+                        <div class="flex flex-col sm:flex-row gap-2.5 mt-3.5">
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Enquire Now</button>
                         </div>
@@ -107,7 +107,7 @@
                         <div class="dest-pkg-footer">
                             <div class="dest-pkg-price">₹12,999 <span>/ person</span></div>
                         </div>
-                        <div style="display:flex;gap:10px;margin-top:14px;">
+                        <div class="flex flex-col sm:flex-row gap-2.5 mt-3.5">
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Enquire Now</button>
                         </div>
@@ -133,7 +133,7 @@
                         <div class="dest-pkg-footer">
                             <div class="dest-pkg-price">₹18,999 <span>/ person</span></div>
                         </div>
-                        <div style="display:flex;gap:10px;margin-top:14px;">
+                        <div class="flex flex-col sm:flex-row gap-2.5 mt-3.5">
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Book Now</button>
                             <button onclick="openConsultModal()" class="flex-1 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] rounded-full transition-colors duration-300">Enquire Now</button>
                         </div>
@@ -156,7 +156,7 @@
                 </button>
             </div>
         </div>
-    </div>>
+    </div>
 
     <script src="js/scroll-top.js"></script>
     <script src="js/dest-common.js"></script>
@@ -165,7 +165,7 @@
     <footer class="bg-slate-900 text-slate-400 pt-[60px]">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[28px] sm:gap-10 max-w-7xl mx-auto px-6">
             <div class="flex flex-col [&>p]:text-[14px] [&>p]:leading-[1.7] [&>p]:mt-3 [&>p]:text-slate-500 [&>p]:max-w-[280px]">
-                <span class="logo-font text-2xl font-bold" style="background: linear-gradient(to right,#0891b2,#22d3ee); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Tour & Travel</span>
+                <span class="logo-font text-2xl font-bold" style="background: linear-gradient(to right,#0891b2,#22d3ee); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;">Tour & Travel</span>
                 <p>Your trusted travel partner for customized journeys across India and the world. From planning to execution, we handle everything professionally.</p>
                 <div class="flex gap-2.5 mt-4 [&>a]:w-9 [&>a]:h-9 [&>a]:rounded-full [&>a]:bg-white/5 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-slate-400 [&>a]:text-[14px] [&>a]:no-underline [&>a]:transition-all [&>a]:duration-200 hover:[&>a]:bg-cyan-500 hover:[&>a]:text-white">
                     <a href="https://wa.me/919971904999" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -196,12 +196,11 @@
                 <h4>Contact Us</h4>
                 <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-phone-alt"></i><a href="tel:+919971904999">+91 9971904999</a></div>
                 <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="fas fa-envelope"></i><a href="mailto:info@tourandtravel.com">info@tourandtravel.com</a></div>
-                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon–Sat: 9AM – 7PM</span></div>
+                <div class="flex items-center gap-2.5 text-[14px] text-slate-500 mb-2.5 [&>i]:text-cyan-500 [&>i]:w-4 [&>i]:shrink-0 [&>a]:text-slate-500 [&>a]:no-underline [&>a]:transition-colors hover:[&>a]:text-cyan-300"><i class="far fa-clock"></i><span>Mon-Sat: 9AM - 7PM</span></div>
             </div>
         </div>
         <div class="mt-12 border-t border-white/5 py-5 px-6 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between flex-wrap gap-2 text-center sm:text-left [&>p]:text-[13px] [&>p]:text-slate-600">
-            <p>&copy; 2025 Tour & Travel. All rights reserved.</p>
-            <p>Designed with <i class="fas fa-heart" style="color:#06b6d4;"></i> for travelers</p>
+            <p>&copy; 2026 Tour & Travel. All rights reserved.</p>
         </div>
     </footer>
 
